@@ -1,0 +1,8 @@
+image map means create map on some image shape .
+
+image map created on 3 shape :
+(1) rect 
+(2) circle 
+(3) poly
+
+<map> and <area> tag use to create an image map.

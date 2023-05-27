@@ -1,0 +1,31 @@
+editors => visual studio code, sublime text, notepad++ 
+
+HTML = > Hypertext Markup Language
+
+used to make a structure on webpage.
+
+developed => 1993
+who's developed? => tim berners' lee
+
+http => HyperText Transfer Protocol
+https => HyperText Transfer Protocol Secure 
+
+webdesite designig => html, css, javascript, jquery and bootstrap 
+front-end => advanced js and react js
+
+what is tag?
+a word is written within angle brecket is known as tag.
+= there are opening and closing tags 
+for ex, <html>...</html>
+
+non-closing tag / non-structure / void tag
+for ex, <br>, <hr>, <img>, <meta>, <input>, <link>
+
+what is element??
+a word written between angle brecket is known as element
+for ex, in <html> html is an element
+<p> in this p is an element 
+
+what is attribute?
+it is an additional functionality.
+for ex, in <body bgcolor="pink"> tag. bgcolor is attribute. 
