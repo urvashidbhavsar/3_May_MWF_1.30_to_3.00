@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: auto;
+            width: 300px;
+            border: 1px solid gray;
+            padding: 20px;
+        }
+
+        div::first-letter {
+            font-size: 25px;
+        }
+
+        div::first-line {
+            color: red;
+        }
+
+        div::selection {
+            background-color: black;
+            color: white;
+        }
+
+        h1::before {
+            content: "\1F64F";
+        }
+
+        h1::after {
+            content: "\1F64F";
+        }
+
+        li::marker {
+            color: crimson;
+        }
+
+        input::placeholder {
+            text-align: center;
+            color: gray;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero necessitatibus enim, magni, et iste blanditiis
+        repellat explicabo iure sequi ratione repellendus placeat. Soluta pariatur ut vitae unde optio dignissimos
+        magnam!
+    </div>
+    <h1>Hello user, we learn css</h1>
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+    </ul>
+    <input type="text" name="" id="" placeholder="Enter Value">
+</body>
+
+</html>
