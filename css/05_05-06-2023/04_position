@@ -1,0 +1,14 @@
+position property used to how to positionate element on webpage.
+
+position : static (detault)
+position : fixed
+position : sticky
+position : relative 
+position : absolute
+
+some property are only work with position 
+(1) top 
+(2) bottom 
+(3) left
+(4) right 
+(5) z-index

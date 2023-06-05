@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 400px;
+            width: 400px;
+            border: 10px dashed black;
+            background: url(image1.jpg) no-repeat;
+            background-size: cover;
+            padding: 20px;
+            /* set background area */
+            /* background-origin: border-box; => set image in border  */
+            /* background-origin: content-box; => cover only content area  */
+            background-origin: padding-box; 
+            /* => default */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv"></div>
+</body>
+
+</html>
