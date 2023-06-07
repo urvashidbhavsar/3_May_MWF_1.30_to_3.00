@@ -1,0 +1,29 @@
+how your content display on webpage.
+
+display : inline 
+display : inline-block 
+display : block
+display : flex 
+display : grid 
+display : inline-grid 
+display : table 
+
+some property are only used with display : flex 
+(1) flex (flex-grow, flex-shrink, flex-basis)
+(2) flex-direction 
+(3) flex-wrap 
+(4) flex-flow 
+(5) gap (row-gap, column-gap)
+(7) justify-content 
+(8) align-items 
+(9) order 
+
+some property are only used with display : grid 
+(1) grid-template-rows 
+(2) grid-template-columns 
+(3) grid-column 
+(4) grid-row 
+(5) gap 
+(6) justify-items 
+(7) align-content 
+(8) place-content 
