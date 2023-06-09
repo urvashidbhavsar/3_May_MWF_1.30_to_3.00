@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .sub {
+            height: 100px;
+            width: 100%;
+            background-color: seagreen;
+        }
+
+        .sub3 {
+            grid-column: 3 / span 2;
+            /* grid-column-start: 3; */
+            /* grid-column-end: span 2; */
+            width: 100%;
+        }
+
+        .sub1 {
+            grid-row: 1/span 2;
+            height: 100%;
+        }
+
+        .sub5 {
+            grid-row: 2 / span 2;
+            grid-column: 2 / span 1;
+            height: 100%;
+        }
+
+        .sub7 {
+            grid-row: 2 / span 1;
+            grid-column: 4/span 2;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- display data as tabular form -->
+    <div class="main">
+        <div class="sub1 sub">Div1</div>
+        <div class="sub2 sub">Div2</div>
+        <div class="sub3 sub">Div3</div>
+        <div class="sub4 sub">Div4</div>
+        <div class="sub5 sub">Div5</div>
+        <div class="sub6 sub">Div6</div>
+        <div class="sub7 sub">Div7</div>
+        <div class="sub8 sub">Div8</div>
+        <div class="sub9 sub">Div9</div>
+        <div class="sub10 sub">Div10</div>
+    </div>
+</body>
+
+</html>

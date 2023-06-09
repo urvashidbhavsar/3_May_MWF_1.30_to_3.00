@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            /* default grid value is row */
+            /* grid-template-columns: auto auto auto auto auto; */
+            /* grid-template-columns: 1fr 1fr 3fr 1fr 1fr; */
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            justify-items: center;
+            align-content: center;
+        }
+
+        .sub {
+            height: 100px;
+            width: 100px;
+            background-color: seagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- display data as tabular form -->
+    <div class="main">
+        <div class="sub">Div1</div>
+        <div class="sub">Div2</div>
+        <div class="sub">Div3</div>
+        <div class="sub">Div4</div>
+        <div class="sub">Div5</div>
+        <div class="sub">Div6</div>
+        <div class="sub">Div7</div>
+        <div class="sub">Div8</div>
+        <div class="sub">Div9</div>
+        <div class="sub">Div10</div>
+    </div>
+</body>
+
+</html>
