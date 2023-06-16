@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            height: 100px;
+            width: 100px;
+            background-color: rgba(165, 42, 42, 0.792);
+            margin: 20px auto;
+            /* scaleX, skewY, shared ,perspectiveX, skewX, scaleY, shared , perspectiveY, , , , translatex, translateY, traslateZ, perspective*/
+            transform: matrix3d(2, 0, 0, 0, 0, 2, 0, 0, 0, 6, 8, 7, 42, 45, 21, 2);
+        }
+
+        /* x = [ scalex skewY shear(yx) perspectiveX
+              skewX  scaleY shear(xy) perspectiveY
+                shear(xz) shear(yz) scaleZ perspective
+            translateX, translateY, translateZ, perspective] */
+    </style>
+</head>
+
+<body>
+    <!-- for matrix3d used https://www.cssportal.com/css-3d-transform-generator/ -->
+    <div class="div1"></div>
+</body>
+
+</html>
