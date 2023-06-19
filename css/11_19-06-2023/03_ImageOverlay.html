@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ============ top - bottom ========= */
+        .ImageOverlay {
+            height: 250px;
+            width: 250px;
+            border: 2px solid black;
+            position: relative;
+            margin: 10px;
+        }
+
+        .ImageOverlay img {
+            height: 250px;
+            width: 250px;
+        }
+
+        .ImageOverlay .imageText {
+            position: absolute;
+            /* top: 0; */
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.787);
+            height: 0;
+            width: 100%;
+            color: white;
+            overflow: hidden;
+            transition: 1s all ease-in-out;
+            text-align: center;
+        }
+
+        .ImageOverlay:hover .imageText {
+            /* height: 50%; */
+            height: 100%;
+        }
+
+        /* ======== left - right  ======== */
+        .ImageOverlay1 {
+            height: 250px;
+            width: 250px;
+            border: 2px solid black;
+            position: relative;
+            margin: 10px;
+        }
+
+        .ImageOverlay1 img {
+            height: 250px;
+            width: 250px;
+        }
+
+        .ImageOverlay1 .imageText1 {
+            position: absolute;
+            top: 0;
+            /* left: 0; */
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.787);
+            height: 100%;
+            width: 0;
+            color: white;
+            overflow: hidden;
+            transition: 1s all ease-in-out;
+            text-align: center;
+        }
+
+        .ImageOverlay1:hover .imageText1 {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- top - bottom  -->
+    <div class="ImageOverlay">
+        <div class="image">
+            <img src="images/img3.jpg" alt="">
+        </div>
+        <div class="imageText">
+            <h1>Image 1</h1>
+            <p>Natural Image</p>
+        </div>
+    </div>
+
+    <!-- left - right -->
+    <div class="ImageOverlay1">
+        <div class="image1">
+            <img src="images/img3.jpg" alt="">
+        </div>
+        <div class="imageText1">
+            <h1>Image 1</h1>
+            <p>Natural Image</p>
+        </div>
+    </div>
+</body>
+
+</html>
