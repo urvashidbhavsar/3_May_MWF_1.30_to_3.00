@@ -1,0 +1,10 @@
+@media (min-width:768px) {
+    .container {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+
+    /* ============ header ============ */
+    
+    /* 768px header section inherit from min 576px */
+}

@@ -1,0 +1,19 @@
+@media (min-width:576px) {
+    .container {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    /* ============ header ============ */
+    header .navbar .nav {
+        display: none;
+    }
+
+    header .navbar .logo h1 {
+        font-size: 35px;
+    }
+
+    header .navbar .theme .togglebtn {
+        display: block;
+    }
+}

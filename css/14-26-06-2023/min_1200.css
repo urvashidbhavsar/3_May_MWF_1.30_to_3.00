@@ -1,0 +1,15 @@
+@media (min-width:1200px) {
+    .container {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    /* ============ header ============ */
+    header .navbar .nav {
+        display: flex;
+    }
+
+    header .navbar .theme .togglebtn {
+        display: none;
+    }
+}
