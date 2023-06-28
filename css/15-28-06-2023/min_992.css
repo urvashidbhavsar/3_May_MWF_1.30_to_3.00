@@ -1,0 +1,27 @@
+@media (min-width:992px) {
+    .container {
+        margin-left: 65px;
+        margin-right: 65px;
+    }
+
+    /* ============ header ============ */
+    /* 768px header section inherit from min 576px */
+    /* ======== homepage ======= */
+    .homepage .home-p {
+        padding: 160px 0px;
+    }
+
+    .homepage .hometext h1 {
+        font-size: 55px;
+    }
+
+    /* appointment section */
+    .appointment .app-info-sec {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .appointment .app-info-sec .app-img-details {
+        padding: 40px;
+    }
+}

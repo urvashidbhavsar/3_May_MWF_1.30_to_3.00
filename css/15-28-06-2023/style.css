@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* =========== common css =========== */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+/* ============= header ============= */
+header {
+    /* background-color: palevioletred; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* filter: blur(10px); */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1111;
+}
+
+header .header-p {
+    padding: 10px 0px;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+}
+
+header .navbar .logo {
+    flex: 1;
+}
+
+header .navbar .logo h1 {
+    color: lightseagreen;
+    font-size: 35px;
+}
+
+header .navbar .nav {
+    flex: 4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .navbar .nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header .navbar .nav ul li {
+    padding: 15px;
+}
+
+header .navbar .nav ul li a {
+    color: black;
+    font-weight: 700;
+    /* position: relative; */
+}
+
+header .navbar .nav ul li a::after {
+    content: "";
+    /* position: absolute; */
+    /* left: -9px; */
+    height: 2px;
+    width: 65px;
+    background-color: white;
+    display: block;
+    transform: scaleX(0);
+    transform-origin: 0% 100%;
+    transition: 0.5s all ease;
+}
+
+header .navbar .nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+header .navbar .nav form .group {
+    position: relative;
+}
+
+header .navbar .nav form .group input[type="text"] {
+    height: 36px;
+    width: 210px;
+    border: none;
+    padding: 0px 10px;
+    border-radius: 40px;
+}
+
+header .navbar .nav form .group button {
+    position: absolute;
+    right: 0;
+    height: 36px;
+    width: 43px;
+    background: #3a0df1;
+    border: 2px solid white;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+header .navbar .theme {
+    flex: 0.5;
+    color: black;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+
+header .navbar .theme .togglebtn {
+    display: none;
+}
+
+header .navbar .theme button {
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+
+/* ============================================= */
+/* homepage */
+.homepage {
+    background-image: url(images/banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.homepage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #1a2980, #2eeae8);
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.homepage .home-p {
+    padding: 180px 0px;
+}
+
+.homepage .hometext p {
+    color: white;
+    font-size: 22px;
+}
+
+.homepage .hometext h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 60px;
+    width: 40%;
+    padding-bottom: 30px;
+}
+
+.homepage .hometext button {
+    height: 53px;
+    width: 148px;
+    background: white;
+    border: 2px solid transparent;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+/* ============= appointment ============= */
+.appointment {
+    background-color: #99a6ef;
+}
+
+.appointment .app-p {
+    padding: 100px 0px;
+}
+
+.appointment .app-info-sec {
+    display: flex;
+    gap: 20px;
+}
+
+.appointment .app-info-sec .app-img-conct {
+    flex: 1;
+}
+
+.appointment .app-info-sec .app-img-conct img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.appointment .app-info-sec .app-img-conct .app-img {
+    position: relative;
+}
+
+.appointment .app-info-sec .app-img-conct .app-conct {
+    background: white;
+    height: auto;
+    width: 70%;
+    padding: 25px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -95px;
+    right: -20px;
+}
+
+.appointment .app-info-sec .app-img-conct .app-conct h3 {
+    font-size: 22px;
+}
+
+.appointment .app-info-sec .app-img-conct .app-conct p {
+    padding: 13px 0px;
+    font-size: 17px;
+}
+
+.appointment .app-info-sec .app-img-conct .app-conct .conct {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.appointment .app-info-sec .app-img-conct .app-conct span {
+    color: dodgerblue;
+}
+
+.appointment .app-info-sec .app-img-conct .app-conct .conct:hover {
+    color: dodgerblue;
+}
+
+.appointment .app-info-sec .app-img-details {
+    flex: 1;
+    padding: 40px;
+}
+
+.appointment .app-info-sec .app-img-details h1 {
+    font-weight: 400;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.appointment .app-info-sec .app-img-details h1 span {
+    font-weight: 700;
+}
+
+.appointment .app-info-sec .app-img-details .upper-p {
+    font-size: 18px;
+}
+
+.appointment .app-info-sec .app-img-details .lower-p {
+    font-size: 17px;
+    padding: 20px 0px;
+}
