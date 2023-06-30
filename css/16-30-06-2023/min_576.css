@@ -1,0 +1,56 @@
+@media (min-width:576px) {
+    .container {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    /* ============ header ============ */
+    header .navbar .nav {
+        display: none;
+    }
+
+    header .navbar .logo h1 {
+        font-size: 35px;
+    }
+
+    header .navbar .theme .togglebtn {
+        display: block;
+    }
+
+    /* ======== homepage ======= */
+    .homepage .home-p {
+        padding: 120px 0px;
+    }
+
+    .homepage .hometext h1 {
+        font-size: 40px;
+        width: 40%;
+    }
+
+    /* appointment section */
+    .appointment .app-info-sec {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .appointment .app-info-sec .app-img-conct .app-conct {
+        position: absolute;
+        width: 70%;
+    }
+
+    .appointment .app-info-sec .app-img-details {
+        padding: 80px 0px 0px 0px;
+    }
+
+    /*  ============ smileContent =============*/
+    .smileContent .gridBox-smiles {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ============= services ============= */
+    .service .service-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
