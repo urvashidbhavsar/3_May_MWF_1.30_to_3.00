@@ -1,0 +1,67 @@
+@media (min-width:992px) {
+    .container {
+        margin-left: 65px;
+        margin-right: 65px;
+    }
+
+    /* ============ header ============ */
+    /* 768px header section inherit from min 576px */
+    /* ======== homepage ======= */
+    .homepage .home-p {
+        padding: 160px 0px;
+    }
+
+    .homepage .hometext h1 {
+        font-size: 55px;
+    }
+
+    /* appointment section */
+    .appointment .app-info-sec {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .appointment .app-info-sec .app-img-details {
+        padding: 40px;
+    }
+
+    /* ============ smile content ============ */
+    .smileContent .gridBox-smiles {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* ============= services ============= */
+    .service .service-details {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* ============= counting sec =========== */
+    .countingSec .count-flex {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .countingSec .count-flex .count-info h1 {
+        font-size: 45px;
+    }
+
+    .countingSec .count-flex .count-num {
+        display: grid;
+        grid-template-columns: unset;
+        grid-template-rows: repeat(3, 1fr)
+    }
+
+    /* ============= visiting ========== */
+    .visitingSec .doc-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .visitingSec .doc-info .doc-details.lstdc {
+        grid-row: 2;
+        grid-column: 1 / span 3;
+        width: 300px;
+    }
+}
