@@ -1,0 +1,840 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* =========== common css =========== */
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+/* ============= header ============= */
+header {
+    /* background-color: palevioletred; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* filter: blur(10px); */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1111;
+}
+
+header .header-p {
+    padding: 10px 0px;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+}
+
+header .navbar .logo {
+    flex: 1;
+}
+
+header .navbar .logo h1 {
+    color: lightseagreen;
+    font-size: 35px;
+}
+
+header .navbar .nav {
+    flex: 4;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .navbar .nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header .navbar .nav ul li {
+    padding: 15px;
+}
+
+header .navbar .nav ul li a {
+    color: black;
+    font-weight: 700;
+    /* position: relative; */
+}
+
+header .navbar .nav ul li a::after {
+    content: "";
+    /* position: absolute; */
+    /* left: -9px; */
+    height: 2px;
+    width: 65px;
+    background-color: white;
+    display: block;
+    transform: scaleX(0);
+    transform-origin: 0% 100%;
+    transition: 0.5s all ease;
+}
+
+header .navbar .nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+header .navbar .nav form .group {
+    position: relative;
+}
+
+header .navbar .nav form .group input[type="text"] {
+    height: 36px;
+    width: 210px;
+    border: none;
+    padding: 0px 10px;
+    border-radius: 40px;
+}
+
+header .navbar .nav form .group button {
+    position: absolute;
+    right: 0;
+    height: 36px;
+    width: 43px;
+    background: #3a0df1;
+    border: 2px solid white;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+header .navbar .theme {
+    flex: 0.5;
+    color: black;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+
+header .navbar .theme .togglebtn {
+    display: none;
+}
+
+header .navbar .theme button {
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+
+/* ============================================= */
+/* homepage */
+.homepage {
+    background-image: url(images/banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.homepage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #1a2980, #2eeae8);
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.homepage .home-p {
+    padding: 180px 0px;
+}
+
+.homepage .hometext p {
+    color: white;
+    font-size: 22px;
+}
+
+.homepage .hometext h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 60px;
+    width: 40%;
+    padding-bottom: 30px;
+}
+
+.homepage .hometext button {
+    height: 53px;
+    width: 148px;
+    background: white;
+    border: 2px solid transparent;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+/* ============= appointment ============= */
+.appointment .app-p {
+    padding: 100px 0px;
+}
+
+.appointment .app-info-sec {
+    display: flex;
+    gap: 20px;
+}
+
+.appointment .app-info-sec .app-img-conct {
+    flex: 1;
+}
+
+.appointment .app-info-sec .app-img-conct img {
+    height: auto;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.appointment .app-info-sec .app-img-conct .app-img {
+    position: relative;
+}
+
+.appointment .app-info-sec .app-img-conct .app-conct {
+    background: white;
+    height: auto;
+    width: 70%;
+    padding: 25px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -95px;
+    right: -20px;
+}
+
+.appointment .app-info-sec .app-img-conct .app-conct h3 {
+    font-size: 22px;
+}
+
+.appointment .app-info-sec .app-img-conct .app-conct p {
+    padding: 13px 0px;
+    font-size: 17px;
+}
+
+.appointment .app-info-sec .app-img-conct .app-conct .conct {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.appointment .app-info-sec .app-img-conct .app-conct span {
+    color: dodgerblue;
+}
+
+.appointment .app-info-sec .app-img-conct .app-conct .conct:hover {
+    color: dodgerblue;
+}
+
+.appointment .app-info-sec .app-img-details {
+    flex: 1;
+    padding: 40px;
+}
+
+.appointment .app-info-sec .app-img-details h1 {
+    font-weight: 400;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.appointment .app-info-sec .app-img-details h1 span {
+    font-weight: 700;
+}
+
+.appointment .app-info-sec .app-img-details .upper-p {
+    font-size: 18px;
+}
+
+.appointment .app-info-sec .app-img-details .lower-p {
+    font-size: 17px;
+    padding: 20px 0px;
+}
+
+/* ============== smile content ============== */
+.smileContent .sm-p {
+    padding: 50px 0px;
+}
+
+.smileContent .title {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.smileContent .title h1 {
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.smileContent .title h1 span {
+    font-weight: 400;
+}
+
+.smileContent .gridBox-smiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.smileContent .gridBox-smiles .grid-smiles {
+    padding: 20px;
+}
+
+.smileContent .gridBox-smiles .icon {
+    color: #037ef3;
+    font-size: 45px;
+    padding: 10px
+}
+
+.smileContent .gridBox-smiles h2 a {
+    color: black;
+    text-transform: capitalize;
+    transition: 0.5s all ease;
+}
+
+.smileContent .gridBox-smiles h2 a:hover {
+    color: #037ef3;
+}
+
+.smileContent .gridBox-smiles p {
+    padding: 10px;
+    font-size: 18px;
+    color: gray;
+    line-height: 30px;
+}
+
+.smileContent .learn-btn {
+    text-align: center;
+}
+
+.smileContent .learn-btn button {
+    height: 52px;
+    width: 150px;
+    background-color: #037ef3;
+    border: 2px solid #037ef3;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    transition: 0.5s all ease;
+}
+
+.smileContent .learn-btn button:hover {
+    color: #037ef3;
+    background-color: transparent;
+}
+
+/* =========== service =========== */
+.service .ser-p {
+    padding: 50px 0px;
+}
+
+.service .title {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.service .title h1 {
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.service .title h1 span {
+    font-weight: 400;
+}
+
+.service .service-details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.service .service-details .servicebox {
+    border: 1px solid #dcd7d7;
+    border-radius: 5px;
+}
+
+.service .service-details .servicebox .ser-image {
+    overflow: hidden;
+    height: 250px;
+}
+
+.service .service-details .servicebox img {
+    height: auto;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: 1s all ease-in-out;
+}
+
+.service .service-details .servicebox:hover img {
+    transform: scale(1.1);
+}
+
+.service .service-details .servicebox .ser-text {
+    padding: 10px;
+}
+
+.service .service-details .servicebox .ser-text p {
+    padding: 5px 0px;
+    line-height: 25px;
+    color: gray;
+}
+
+.service .service-details .servicebox .ser-text .link {
+    padding: 5px 0px;
+}
+
+.service .service-details .servicebox .ser-text a {
+    color: #037ef3;
+    font-weight: bold;
+    transition: 0.5s all ease;
+}
+
+.service .service-details .servicebox .ser-text a span {
+    font-size: 12px;
+}
+
+.service .service-details .servicebox .ser-text a:hover {
+    color: aqua;
+}
+
+/* ====================================== */
+.countingSec {
+    background: url(images/bg1.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.countingSec::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #1a2980, #2eeae8);
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.countingSec .count-p {
+    padding: 60px 0px;
+}
+
+.countingSec .count-flex {
+    display: flex;
+    gap: 30px;
+}
+
+.countingSec .count-flex .count-info {
+    flex: 2;
+    padding: 20px;
+}
+
+.countingSec .count-flex .count-info h1 {
+    color: white;
+    font-size: 45px;
+    padding-bottom: 20px;
+}
+
+.countingSec .count-flex .count-info p {
+    color: white;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.countingSec .count-flex .count-info button {
+    height: 50px;
+    width: 150px;
+    background-color: white;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s all ease;
+}
+
+.countingSec .count-flex .count-info button:hover {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.countingSec .count-flex .count-num {
+    padding: 20px;
+    flex: 1;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.countingSec .count-flex .count-num h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.countingSec .count-flex .count-num p {
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* ================== visiting sec ================= */
+.visitingSec .visit-p {
+    padding: 50px 0px;
+}
+
+.visitingSec .title {
+    text-align: center;
+    padding: 20px;
+}
+
+.visitingSec .title h1 {
+    font-size: 45px;
+    text-transform: capitalize;
+}
+
+.visitingSec .title span {
+    font-weight: 400;
+}
+
+.visitingSec .doc-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.visitingSec .doc-info .doc-details {
+    padding: 15px;
+    box-shadow: 0px 10px 15px 0px gray;
+}
+
+.visitingSec .doc-info .doc-details img {
+    height: 252px;
+    width: 100%;
+}
+
+.visitingSec .doc-details .doc-image {
+    position: relative;
+    height: 252px;
+    width: 100%;
+}
+
+.visitingSec .doc-details .doc-image .connct-doc {
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.76);
+    overflow: hidden;
+    transition: 1s all cubic-bezier(0, 0.58, 0, 1.12);
+}
+
+.visitingSec .doc-info .doc-details:hover .connct-doc {
+    height: 30%;
+}
+
+.visitingSec .doc-info .doc-details .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.visitingSec .doc-info .doc-details .social-media .icon {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}
+
+.visitingSec .doc-info .doc-details .social-media .icon a {
+    color: #037ef3;
+}
+
+.visitingSec .doc-info .doc-details .social-media .icon a:hover {
+    color: #3596f1;
+}
+
+.visitingSec .doc-info .doc-details .doc-bio {
+    padding: 20px;
+    text-align: center;
+}
+
+.visitingSec .doc-info .doc-details .doc-bio h3 {
+    text-transform: capitalize;
+    color: black;
+    transition: 0.5s all ease;
+    padding-bottom: 10px;
+}
+
+.visitingSec .doc-info .doc-details:hover .doc-bio h3 {
+    color: #037ef3;
+}
+
+/* ================= blog section ============= */
+.blogSec .blog-p {
+    padding: 50px 0px;
+}
+
+.blogSec .title {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.blogSec .title h1 {
+    font-size: 45px;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+
+.blogSec .title h1 span {
+    font-weight: bold;
+}
+
+.blogSec .blogbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.blogSec .blogbox .blog {
+    border: 1px solid gainsboro;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    /* align-items: center; */
+    max-width: 100%;
+}
+
+.blogSec .blogbox .blog img {
+    height: auto;
+    max-width: 100%;
+}
+
+.blogSec .blogbox .blog .blog-text {
+    align-self: center;
+    padding: 10px;
+}
+
+.blogSec .blogbox .blog .blog-text h3 {
+    padding-bottom: 30px;
+    font-size: 27px;
+}
+
+.blogSec .blogbox .blog .blog-text h3 a {
+    color: black;
+    font-weight: bold;
+    transition: 0.5s ease all;
+}
+
+.blogSec .blogbox .blog .blog-text h3 a:hover {
+    color: #037ef3;
+}
+
+.blogSec .blogbox .blog-text .appoint {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogSec .blogbox .blog-text .appoint a span {
+    color: #2eeae8;
+    font-size: 22px;
+    transition: 0.5s ease all;
+}
+
+.blogSec .blogbox .blog-text .appoint a:hover span {
+    color: #037ef3;
+}
+
+/* ============ progress section =========== */
+.progress .pro-p {
+    padding: 50px 0px;
+}
+
+.progress .progress-f {
+    display: flex;
+    gap: 20px;
+}
+
+.progress .progress-f .pro-lines {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* align-self: center; */
+}
+
+.progress .progress-f .pro-img {
+    flex: 1;
+    text-align: center;
+}
+
+.progress .progress-f .pro-img img {
+    height: auto;
+    max-width: 100%;
+}
+
+.progress .progress-f p {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.progress .progress-f .pro-lines .pro1-t {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding-bottom: 10px;
+}
+
+.progress .progress-f .pro-lines .pro1-l {
+    height: 5px;
+    width: 100%;
+    background-color: rgb(235, 231, 231);
+    position: relative;
+}
+
+.progress .progress-f .pro-lines .pro-up-line1 {
+    position: absolute;
+    top: 0;
+    height: 5px;
+    width: 80%;
+    background: linear-gradient(to right, #037ef3, #2eeae8);
+}
+
+.progress .progress-f .pro-lines .pro1-l .cir1 {
+    position: absolute;
+    right: 0px;
+    top: -6px;
+    height: 15px;
+    width: 15px;
+    background-color: #2eeae8;
+    border-radius: 50%;
+}
+
+.progress .progress-f .pro-lines .pro2-t {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    padding-bottom: 10px;
+}
+
+.progress .progress-f .pro-lines .pro2-l {
+    height: 5px;
+    width: 100%;
+    background-color: rgb(235, 231, 231);
+    position: relative;
+}
+
+.progress .progress-f .pro-lines .pro-up-line2 {
+    position: absolute;
+    top: 0;
+    height: 5px;
+    width: 95%;
+    background: linear-gradient(to right, #fa7522, #f89252);
+}
+
+.progress .progress-f .pro-lines .pro2-l .cir2 {
+    position: absolute;
+    right: 0px;
+    top: -6px;
+    height: 15px;
+    width: 15px;
+    background-color: #f89252;
+    border-radius: 50%;
+}
+
+.progress .progress-f .pro-lines .pro3-t {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    padding-bottom: 10px;
+}
+
+.progress .progress-f .pro-lines .pro3-l {
+    height: 5px;
+    width: 100%;
+    background-color: rgb(235, 231, 231);
+    position: relative;
+}
+
+.progress .progress-f .pro-lines .pro-up-line3 {
+    position: absolute;
+    top: 0;
+    height: 5px;
+    width: 60%;
+    background: linear-gradient(to right, #fa22cb, #ad1dea);
+}
+
+.progress .progress-f .pro-lines .pro3-l .cir3 {
+    position: absolute;
+    right: 0px;
+    top: -6px;
+    height: 15px;
+    width: 15px;
+    background-color: #ad1dea;
+    border-radius: 50%;
+}
+
+.progress .progress-f .pro-lines .pro4-t {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    padding-bottom: 10px;
+}
+
+.progress .progress-f .pro-lines .pro4-l {
+    height: 5px;
+    width: 100%;
+    background-color: rgb(235, 231, 231);
+    position: relative;
+}
+
+.progress .progress-f .pro-lines .pro-up-line4 {
+    position: absolute;
+    top: 0;
+    height: 5px;
+    width: 85%;
+    background: linear-gradient(to right, #f0b0b6, #ea1d6f);
+}
+
+.progress .progress-f .pro-lines .pro4-l .cir4 {
+    position: absolute;
+    right: 0px;
+    top: -6px;
+    height: 15px;
+    width: 15px;
+    background-color: #ea1d6f;
+    border-radius: 50%;
+}

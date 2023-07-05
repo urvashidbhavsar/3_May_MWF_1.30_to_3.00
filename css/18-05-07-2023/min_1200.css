@@ -1,0 +1,41 @@
+@media (min-width:1200px) {
+    .container {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    /* ============ header ============ */
+    header .navbar .nav {
+        display: flex;
+    }
+
+    header .navbar .theme .togglebtn {
+        display: none;
+    }
+
+    /* ======== homepage ======= */
+    .homepage .home-p {
+        padding: 180px 0px;
+    }
+
+    .homepage .hometext h1 {
+        font-size: 60px;
+    }
+
+    /* ======== appointment section inherit from min width 992px */
+    /* ========smile section inherit from min width 992px */
+    /* ======== service section inherit from min width 992px */
+    /* ========= counting section inherit from min width 992px */
+
+    /* ============= visiting ========== */
+    .visitingSec .doc-info {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .visitingSec .doc-info .doc-details.lstdc {
+        grid-row: unset;
+        grid-column: unset;
+        width: unset;
+    }
+}
