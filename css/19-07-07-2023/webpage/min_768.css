@@ -1,0 +1,56 @@
+@media (min-width:768px) {
+    .container {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+
+    /* ============ header ============ */
+
+    /* 768px header section inherit from min 576px */
+    /* ======== homepage ======= */
+    .homepage .home-p {
+        padding: 140px 0px;
+    }
+
+    .homepage .hometext h1 {
+        font-size: 50px;
+    }
+
+    /* ======== appointment section inherit from min width 576px */
+    /* ======== smile section inherit from min width 576px */
+    /* ======== service section inherit from min width 576px */
+
+    /* ============= counting sec =========== */
+    .countingSec .count-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .countingSec .count-flex .count-info h1 {
+        font-size: 40px;
+    }
+
+    .countingSec .count-flex .count-num {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .countingSec .count-flex .lastcount {
+        grid-row: unset;
+        grid-column: unset;
+    }
+
+    /* =========== visiting sec inherit from min width 576px */
+    /* ============= blog page ========= */
+    .blogSec .blogbox .blog {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: left;
+    }
+
+    .blogSec .blogbox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* ========== progress inherit from min width 576px */
+}
