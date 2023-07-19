@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="btn1" onclick="SetBlue()">Blue</button>
+    <hr>
+    <div class="div1"></div>
+
+    <script>
+        function SetBlue() {
+            let div = document.querySelector(".div1")
+            div.style.height = "200px"
+            div.style.width = "200px"
+            div.style.backgroundColor = "blue"
+            div.style.border = "2px solid red"
+            div.style.borderRadius = "20%"
+            div.style.transition = "1s ease all"
+        }
+    </script>
+</body>
+
+</html>

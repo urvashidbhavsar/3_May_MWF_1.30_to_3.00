@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #msg {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="">Enter Any Value : </label>
+        <input type="text" name="" id="userVal">
+
+        <button onclick="return userInput()">Click</button>
+    </form>
+    <p>Entered Value are : <span id="msg"></span> </p>
+    <script>
+        function userInput() {
+            let user = document.getElementById("userVal").value;
+            // document.getElementById("msg").innerHTML = "<b>" + user + "</b>";
+            document.getElementById("msg").innerHTML = user;
+            return false;
+        }
+    </script>
+</body>
+
+</html>

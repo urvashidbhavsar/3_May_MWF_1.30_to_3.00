@@ -1,0 +1,9 @@
+(1) add() = used to add css class
+(2) remove() = used to remove class
+(3) toggle() = add and remove both
+(4) contains() = check css class it exist or not
+(5) test() = check regular expression in form validation
+(6) match() = check regular expression in form validation
+
+property :
+classList = use to add or remove css class

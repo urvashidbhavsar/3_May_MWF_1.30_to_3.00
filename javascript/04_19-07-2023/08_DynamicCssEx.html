@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+        }
+
+        /* not add in structure only for js use */
+        .newmydiv {
+            background-color: brown;
+            border: 5px solid darkred;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1" onclick="setDiv()">Click to set Css</button>
+    <hr>
+    <div class="mydiv"></div>
+
+    <script>
+        function setDiv() {
+            let box = document.querySelector(".mydiv");
+            box.classList.toggle("newmydiv")
+        }
+    </script>
+</body>
+
+</html>

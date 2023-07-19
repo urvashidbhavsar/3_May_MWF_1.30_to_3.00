@@ -1,0 +1,10 @@
+(1) getElementById()
+(2) querySelector()
+(3) querySelectorAll() 
+(4) getElementByClassName()
+(5) getElementByTag()
+(6) getElementByName()
+
+to print value on structure used 2 properties :
+(1) innerHTML 
+(2) innerText
