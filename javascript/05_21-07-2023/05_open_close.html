@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="openFun()">Open</button>
+    <button onclick="closeFun()">Close</button>
+
+    <script>
+        var openlink = "https://www.shopify.com/"
+        var closelink;
+        function openFun() {
+            closelink = window.open(openlink)
+        }
+        function closeFun() {
+            closelink.window.close()
+        }
+    </script>
+</body>
+
+</html>

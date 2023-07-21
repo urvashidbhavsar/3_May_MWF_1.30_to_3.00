@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- prompt take an input from user -->
+    <button onclick="PromptFun()">Prompt</button>
+
+    <h1></h1>
+    <script>
+        function PromptFun() {
+            var user = prompt("Enter your name :")
+            if (user == "") {
+                alert("Enter value");
+            } else {
+                document.querySelector("h1").innerText = user
+            }
+        }
+    </script>
+</body>
+
+</html>
