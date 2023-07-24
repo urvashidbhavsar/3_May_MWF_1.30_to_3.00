@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .NumCnt {
+            height: 200px;
+            width: 200px;
+            background-color: teal;
+            color: white;
+            display: grid;
+            place-content: center;
+            font-size: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="NumberCount" class="NumCnt"></div>
+
+    <script>
+        // setInterval() = set timing 
+        // clearInterval() = stop 
+        let startcount = setInterval(setNum, 360)
+        let start = 100
+        function setNum() {
+            let num = document.getElementById("NumberCount");
+            num.innerHTML = ++start;
+            if (start == 200) {
+                clearInterval(startcount)
+            }
+        }
+    </script>
+</body>
+
+</html>

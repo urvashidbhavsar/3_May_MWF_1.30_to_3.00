@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        Enter Maths Table : <input type="text" name="" id="TableNo">
+        <button id="disp" onclick="return DisplayTable()">Display</button>
+    </form>
+    <br><br>
+    <div id="dispTable"></div>
+    <script>
+        function DisplayTable() {
+            var table = document.getElementById("TableNo").value;
+            var disp = document.getElementById("dispTable")
+            if (table == "" || table == null) {
+                alert("Enter Value")
+            } else {
+                var res = ""
+                for (var i = 1; i <= 10; i++) {
+                    res = res + "<p>" + table + "&Cross;" + i + "=" + table * i + "</p>"
+                }
+                disp.innerHTML = res;
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>
