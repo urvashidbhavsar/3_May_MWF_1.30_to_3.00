@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+/* ======================================== */
+.TopHeader{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1111;
+    transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) all;
+}
+/* create random css for change header bg color */
+.headerFixed{
+    background-color: teal;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1111;
+    transition: 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) all;
+
+}
+.TopHeader .header-p{
+    padding: 20px 0px
+}
+.TopHeader .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.TopHeader .navbar .logo{
+    flex: 0.5;
+}
+.TopHeader .navbar .logo h1{
+    font-size: 45px;
+    color: white;
+}
+.TopHeader .navbar .nav{
+    flex: 2;
+}
+.TopHeader .navbar .nav ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+.TopHeader .navbar .nav ul li{
+    padding: 10px;
+}
+.TopHeader .navbar .nav ul li a{
+    color: white;
+    font-size: 18px;
+}
+.TopHeader .navbar .theme{
+    flex: 0.2;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+.TopHeader .navbar .theme span{
+    font-size: 22px;
+}
+.TopHeader .navbar .theme .tbtn{
+    display: none;
+    position: relative;
+}
+.TopHeader .navbar .theme button{
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.homepage img{
+    height: 900px;
+    width: 100%;
+    filter: brightness(50%);
+}
+
+/* ================= create a css for toggle menubar which is not include in any structure ================ */
+.TopHeader .navbar .navToggle{
+    position: absolute;
+    background-color: rgb(16, 120, 70);
+    top: 100px;
+    left: 0;
+    width: 100%;
+}
+.TopHeader .navbar .navToggle ul{
+    display: flex;
+    flex-direction: column;
+}
+.TopHeader .navbar .navToggle ul li{
+    padding: 5px;
+}
+/* ==================================================================  */
+@media (max-width:576px) {
+    .container{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .TopHeader .navbar .nav{
+        display: none;
+    }
+    .TopHeader .navbar .navToggle{
+        display: block;
+    }
+    .TopHeader .navbar .theme .tbtn{
+        display: block;
+    }
+}
+@media (min-width:576px) {
+    .container{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .TopHeader .navbar .nav{
+        display: none;
+    }
+    .TopHeader .navbar .navToggle{
+        display: block;
+    }
+    .TopHeader .navbar .theme .tbtn{
+        display: block;
+    }
+}
+@media (min-width:992px) {
+    .container{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    .TopHeader .navbar .nav{
+        display: flex;
+        justify-content: end;
+    }
+    .TopHeader .navbar .navToggle{
+        display: none;
+    }
+    .TopHeader .navbar .theme .tbtn{
+        display: none;
+    }
+}
+@media (min-width:1200px) {
+    .container{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
