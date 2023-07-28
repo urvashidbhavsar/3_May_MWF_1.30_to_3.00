@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1"></p>
+    <p id="tdate"></p>
+    <p id="ttime"></p>
+    <p id="p2"></p>
+    <script>
+        var dt = new Date()
+
+        document.getElementById("p1").innerHTML = dt;
+
+        document.getElementById("tdate").innerHTML = dt.getDate() + "-" + (dt.getMonth() + 1) + "-" + dt.getFullYear()
+
+        document.getElementById("ttime").innerHTML = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds()
+
+        document.getElementById("p2").innerHTML = dt.getDay()
+    </script>
+</body>
+
+</html>

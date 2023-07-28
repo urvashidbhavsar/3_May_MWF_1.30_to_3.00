@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- array is a collection of data's / array is a name of memory location.
+        there is 2 ways to create array :  
+        (1) simple array
+        (2) constructor array
+    -->
+    <script>
+        var subject = ["html", "css", "js", "jquery", "bootstrap", 123]
+        console.log(subject);
+
+        console.log(subject[0]);
+        console.log(subject[1]);
+        console.log(subject[2]);
+        console.log(subject[3]);
+        console.log(subject[4]);
+        console.log(subject[5]);
+        console.log("=============");
+
+        // using loop print an array 
+        let subj;
+        for (subj of subject) {
+            // for (var i = 0; i < subject.length; i++) {
+            console.log(subj);
+            // }
+        }
+
+        subject.pop()
+        console.log("=============");
+        for (subj of subject) {
+            console.log(subj);
+        }
+
+        subject.push("react")
+        console.log("=============");
+        for (subj of subject) {
+            console.log(subj);
+        }
+    </script>
+</body>
+
+</html>

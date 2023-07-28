@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- object means logical and physical items which has key-pair value.
+    -->
+    <script>
+        var person = {
+            firstname: "Tejas",
+            lastname: "Rathod",
+            mobileNo: 9645433322,
+            birthdate: "20-11-2000",
+        }
+        console.log(person);
+        console.log(person.firstname)
+        console.log(person.lastname)
+        console.log(person.birthdate)
+        console.log(person.mobileNo)
+
+        for (const per in person) {
+            console.log(per + " => " + person[per]);
+        }
+    </script>
+</body>
+
+</html>
