@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- onblur = element lost focus -->
+    <form action="#">
+        Enter Your name : <input type="text" name="" id="username" onblur="return checkName()"
+            onkeyup="return nameCheckValid()" maxlength="20">
+        <button type="submit" onclick="return checkName()">Click Here</button>
+
+        <p id="msg"></p>
+    </form>
+
+    <script>
+        function checkName() {
+            let uname = document.getElementById("username").value;
+            if (uname == "" || uname == null) {
+                document.getElementById("msg").innerText = "Enter your name"
+                return false
+            } else {
+                document.getElementById("msg").innerText = ""
+                return false
+            }
+        }
+        // keyboard event function
+        // isNaN() = is not a number
+        // regular expression make from some symbols.
+        function nameCheckValid() {
+            let uname = document.getElementById("username").value;
+            let regEx = /^[a-zA-z]*$/
+            if ((!(uname.match(regEx))) || uname.length < 2) {
+                document.getElementById("msg").innerText = "invalid value";
+                return false
+            } else {
+                document.getElementById("msg").innerText = "";
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>

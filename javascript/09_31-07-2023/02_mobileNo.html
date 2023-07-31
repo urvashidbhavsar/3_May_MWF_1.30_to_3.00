@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        Mobile No : <input type="text" name="" id="mobileno" onblur="return checkMobileNo()"
+            onkeyup="return checkNumEx()" maxlength="10">
+        <button type="submit" onclick="return checkMobileNo()">Click Here</button>
+
+        <p id="msg"></p>
+    </form>
+
+    <script>
+        function checkMobileNo() {
+            let num = document.getElementById("mobileno").value;
+            if (num == "" || num == null) {
+                document.getElementById("msg").innerText = "Enter Mobile No";
+                return false;
+            }
+        }
+
+        // keyboard event 
+        function checkNumEx() {
+            let num = document.getElementById("mobileno").value;
+            let regEx = /^[0-9]+$/;
+            let start = /^[6-9]/
+            if (!(regEx.test(num)) || !start.test(num) || num.length < 10) {
+                document.getElementById("msg").innerText = "Invalid Number";
+                return false
+            } else {
+                document.getElementById("msg").innerText = "";
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>
