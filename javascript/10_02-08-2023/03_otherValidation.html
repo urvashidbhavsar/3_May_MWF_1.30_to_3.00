@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td>Gender : </td>
+                <td>
+                    <input type="radio" name="gen" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gen" id="female">
+                    <label for="female">Female</label>
+                </td>
+                <td>
+                    <span id="msg1"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Subject : </td>
+                <td>
+                    <input type="checkbox" name="" id="sub1">
+                    <label for="sub1">Javascript</label>
+                    <input type="checkbox" name="" id="sub2">
+                    <label for="sub2">Jquery</label>
+                    <input type="checkbox" name="" id="sub3">
+                    <label for="sub3">Bootstrap</label>
+                </td>
+                <td>
+                    <span id="msg2"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>City : </td>
+                <td>
+                    <select name="" id="city">
+                        <option value="-1">---select---</option>
+                        <option value="">Surat</option>
+                    </select>
+                </td>
+                <td>
+                    <span id="msg3"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="return checkValid()">Click</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function checkValid() {
+            let male = document.getElementById("male").checked;
+            let female = document.getElementById("female").checked;
+
+            let s1 = document.getElementById("sub1").checked;
+            let s2 = document.getElementById("sub2").checked;
+            let s3 = document.getElementById("sub3").checked;
+
+            let city = document.getElementById("city").value;
+            if (male == false && female == false) {
+                document.getElementById("msg1").innerText = "Select Gender";
+                return false;
+            } else if (s1 == false && s2 == false && s3 == false) {
+                document.getElementById("msg2").innerText = "Select Subject";
+                return false;
+            } else if (city == "-1") {
+                document.getElementById("msg3").innerText = "Select city";
+                return false;
+            } else {
+                document.getElementById("msg1").innerText = "";
+                document.getElementById("msg2").innerText = "";
+                document.getElementById("msg3").innerText = "";
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>
