@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="formValid">
+        <h2>New User </h2>
+        <hr>
+        <form action="">
+            <!-- firstname -->
+            <div class="row">
+                <div class="col">Firstname</div>
+                <div class="col">
+                    <input type="text" name="" id="fname" onblur="return blankCheck(this, 'msg1')"
+                        onkeyup="return nameValid(this, 'msg1')">
+                </div>
+                <div class="col">
+                    <span id="msg1" class="msg"></span>
+                </div>
+            </div>
+            <!-- lastname -->
+            <div class="row">
+                <div class="col">Lastname</div>
+                <div class="col">
+                    <input type="text" name="" id="lname" onblur="return blankCheck(this, 'msg2')"
+                        onkeyup="return nameValid(this, 'msg2')">
+                </div>
+                <div class="col">
+                    <span id="msg2" class="msg"></span>
+                </div>
+            </div>
+            <!-- Gender -->
+            <div class="row">
+                <div class="col">Gender</div>
+                <div class="col">
+                    <input type="radio" name="gen" id="male" onblur="return SelectChecked(this, 'msg3')">
+                    <label for="">Male</label>
+                    <input type="radio" name="gen" id="female" onblur="return SelectChecked(this, 'msg3')">
+                    <label for="">Female</label>
+                </div>
+                <div class="col">
+                    <span id="msg3" class="msg"></span>
+                </div>
+            </div>
+            <!-- Address -->
+            <div class="row">
+                <div class="col">Address</div>
+                <div class="col">
+                    <textarea name="" id="addr" cols="30" rows="2" onblur="return blankCheck(this, 'msg4')"
+                        onkeyup="return addressCheck(this,'msg4')" maxlength="150"
+                        placeholder="Address must be 30 to 150 characters"></textarea>
+                </div>
+                <div class="col">
+                    <span id="msg4" class="msg"></span>
+                </div>
+            </div>
+            <!-- city -->
+            <div class="row">
+                <div class="col">City</div>
+                <div class="col">
+                    <select name="" id="city" onblur="return selectop(this, 'msg5')">
+                        <option value="-1">---select---</option>
+                        <option value="">Surat</option>
+                        <option value="">Baroda</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <span id="msg5" class="msg"></span>
+                </div>
+            </div>
+            <!-- mobile no -->
+            <div class="row">
+                <div class="col">Mobile No</div>
+                <div class="col">
+                    <input type="text" name="" id="mobileno" onblur="return blankCheck(this, 'msg6')"
+                        onkeyup="return mobileCheck(this, 'msg6')" maxlength="10">
+                </div>
+                <div class="col">
+                    <span id="msg6" class="msg"></span>
+                </div>
+            </div>
+            <!-- button -->
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <button onclick="return formCheck()">Check</button>
+                </div>
+                <div class="col"></div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
