@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px
+        }
+
+        .mydiv {
+            height: 300px;
+            width: 150px;
+            background-color: chocolate;
+        }
+
+        .mydiv1 {
+            height: 300px;
+            width: 150px;
+            background-color: turquoise;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- slide function work on height -->
+    <button id="btn1">slideUp</button>
+    <button id="btn2">slideDown</button>
+    <button id="btn3">slideToggle</button>
+    <hr>
+    <div class="main">
+        <div class="mydiv"></div>
+        <div class="mydiv1"></div>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".mydiv").slideUp(2000)
+            })
+            $("#btn2").click(function () {
+                $(".mydiv").slideDown(2000)
+            })
+            $("#btn3").click(function () {
+                $(".mydiv1").slideToggle(2000)
+            })
+        })
+    </script>
+</body>
+
+</html>

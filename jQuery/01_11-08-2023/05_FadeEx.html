@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 300px;
+            width: 450px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="https://wallpapers.com/images/hd/beautiful-purple-aesthetic-nature-1du66ydxon91d2to.jpg" alt=""
+        class="myimg">
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".myimg").mouseover(function () {
+                $(".myimg").fadeTo(2000, 0.6)
+            })
+            $(".myimg").mouseout(function () {
+                $(".myimg").fadeTo(2000, 1)
+            })
+        })
+    </script>
+</body>
+
+</html>

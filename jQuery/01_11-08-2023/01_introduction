@@ -1,0 +1,17 @@
+jquery = js library 
+
+it is provide readymade function to make js code easy.
+
+version : jquery 3.7.0
+
+website : jquery.com 
+
+cdn use : (1) offline = download package 
+(2) online = use cdn 
+
+syntax : 
+$(document).ready(function(){
+    $("selector").event(function(){
+        $("selector").jquery_function();
+    })
+})
