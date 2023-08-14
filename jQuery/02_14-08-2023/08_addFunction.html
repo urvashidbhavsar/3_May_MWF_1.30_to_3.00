@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- add functions : 
+        append() => add end of the element, 
+        prepend() => add begin of the element, 
+        before() => add begin of the element (inline), 
+        after() => add end of the element (inline)-->
+    <form action="#">
+        <input type="text" name="" id="mylist">
+        <button id="btn">click here</button>
+    </form>
+    <ul>
+        <li>List 1</li>
+    </ul>
+    <b>Hello</b>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $list = $("#mylist").val()
+                $("ul").append("<li>" + $list + "</li>")
+                // $("ul").prepend("<li>" + $list + "</li>")
+            })
+            $("b").before("!!!!")
+            $("b").after("!!!!")
+
+        })
+    </script>
+</body>
+
+</html>
