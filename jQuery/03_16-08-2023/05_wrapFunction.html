@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn1">Wrap</button>
+    <button id="btn2">unwrap</button>
+    <button id="btn3">WrapAll</button>
+    <hr>
+    <p>Hello User</p>
+    <p>We learn Jquery</p>
+
+    <span>Span1</span>
+    <span>Span1</span>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                // wrap set as a single element
+                $("p").wrap("<div class='div1'></div>")
+            })
+            $("#btn2").click(function () {
+                $("p").unwrap()
+            })
+            $("#btn3").click(function () {
+                // wrap set as a all element like a parent set
+                $("span").wrapAll("<div class='icon'></div>")
+            })
+        })
+    </script>
+</body>
+
+</html>

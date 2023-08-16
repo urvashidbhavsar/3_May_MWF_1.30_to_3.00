@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .h1-hd1 {
+            letter-spacing: 1px;
+            color: crimson;
+            background-color: bisque;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">Add Class</button>
+    <button id="btn2">Remove Class</button>
+    <button id="btn3">Toggle Class</button>
+    <hr>
+    <h1 class="hd1">Hello</h1>
+    <h1 class="hd2">User</h1>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".hd1").addClass("h1-hd1");
+            })
+            $("#btn2").click(function () {
+                $(".hd1").removeClass("h1-hd1");
+            })
+            $("#btn3").click(function () {
+                $(".hd2").toggleClass("h1-hd1");
+            })
+        })
+    </script>
+</body>
+
+</html>
