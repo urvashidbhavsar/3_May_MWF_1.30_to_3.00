@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bxslider css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        img {
+            height: 600px;
+            width: 100%;
+        }
+
+        .fleximage {
+            display: flex;
+        }
+
+        .fleximage .img {
+            flex: 1;
+        }
+
+        .fleximage .text {
+            flex: 1;
+            display: grid;
+            place-content: center;
+            background-color: palegreen;
+        }
+
+        .bx-wrapper {
+            border: none;
+            box-shadow: none;
+        }
+
+        .bx-wrapper .bx-pager {
+            bottom: 47px;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a.active {
+            background-color: red;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bxslider">
+        <div class="flexbox">
+            <div class="fleximage">
+                <div class="img">
+                    <img src="images/img1.jpeg" alt="" title="image1">
+                </div>
+                <div class="text">
+                    <h1>Image 1</h1>
+                </div>
+            </div>
+        </div>
+        <div class="flexbox">
+            <div class="fleximage">
+                <div class="img">
+                    <img src="images/img2.jpg" alt="" title="image1">
+                </div>
+                <div class="text">
+                    <h1>Image 2</h1>
+                </div>
+            </div>
+        </div>
+        <div class="flexbox">
+            <div class="fleximage">
+                <div class="img">
+                    <img src="images/img3.jpg" alt="" title="image1">
+                </div>
+                <div class="text">
+                    <h1>Image 3</h1>
+                </div>
+            </div>
+        </div>
+        <div class="flexbox">
+            <div class="fleximage">
+                <div class="img">
+                    <img src="images/img4.jpg" alt="" title="image1">
+                </div>
+                <div class="text">
+                    <h1>Image 4 </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- bxslider js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script>
+        $(function () {
+            $(".bxslider").bxSlider({
+                // mode: "fade",
+                speed: 1000,
+                infiniteLoop: true,
+                pager: true,
+                // pagerType: "short", 
+                controls: false,
+                auto: true,
+                autoHover: true,
+            })
+        })
+    </script>
+</body>
+
+</html>
