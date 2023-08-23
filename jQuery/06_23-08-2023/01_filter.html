@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para {
+            color: blue;
+            border: 2px solid red;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Click Here</button>
+    <p id="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsam dolor architecto quisquam ullam quas
+        maxime similique dolorem necessitatibus expedita neque inventore, magnam voluptate ex nesciunt sint sit
+        laudantium dolores.
+    </p>
+    <p id="p2">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, architecto totam deleniti, optio voluptas eveniet,
+        odit vitae earum eius ut debitis velit suscipit molestiae rerum quam dolor accusamus consectetur? Aliquam.
+    </p>
+    <p id="p3">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi commodi est architecto tempore unde dicta
+        reiciendis nisi, mollitia vero itaque velit ullam provident et quo, iure neque ex minima laboriosam.
+    </p>
+    <p id="p4">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam impedit iure fugit voluptates distinctio laborum?
+        Reiciendis enim sapiente commodi ex cumque eligendi magnam eaque iure, libero, sequi est repudiandae quaerat.
+    </p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                //  $("p").filter("#p2").addClass("para")
+                // $("p").first().addClass("para")
+                // $("p").last().addClass("para")
+                // $("p").eq(3).addClass("para") // => this work as index based
+                $("p").not("#p3").addClass("para")
+            })
+        })
+    </script>
+</body>
+
+</html>
