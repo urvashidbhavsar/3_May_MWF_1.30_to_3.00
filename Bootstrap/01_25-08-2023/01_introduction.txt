@@ -1,0 +1,10 @@
+bootstrap is css library.
+it has also some js library.
+
+bootstrap5
+version : 5.3.1
+
+website : https://getbootstrap.com/
+
+bootstrap4 has a 5 responsive tiers. 
+while bootstrap5 has a 6 responsive tiers.
