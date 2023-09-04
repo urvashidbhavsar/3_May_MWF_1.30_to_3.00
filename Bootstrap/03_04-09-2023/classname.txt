@@ -1,0 +1,15 @@
+property/defination                                     classname 
+(1) display:flex                                        d-flex 
+(2) align-items:center                                  align-items-center
+(3) for input type = text, password, date, month,       form-control 
+    datetime, email, number, textarea, file etc 
+(4) for label                                           form-label 
+(5) for input type= radio & checkbox                    form-check-input 
+(6) for label of input type radio and checkbox          form-check-label 
+(7) for parent class of radio i.e. in div               form-check 
+(8) if set radio in 1 row                               form-check-inline
+(9) for select-option                                   form-select 
+(10) for range                                          form-range 
+(11) for color pallate                      form-control-color, form-control  
+(12) to join input type text & button/label             input-group-text 
+(13) set class in parent div                            input-group
