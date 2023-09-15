@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0 !important;
+}
+
+.topheader a {
+    transition: 0.5s ease all;
+}
+
+.topheader a:hover {
+    color: #ed6663 !important;
+}
+
+.topheader button {
+    border: 1px solid #ed6663;
+    color: #0f4c81;
+}
+
+.topheader button:hover {
+    border: 1px solid #0f4c81;
+    color: white;
+    background-color: #0f4c81
+}
+
+.navigation {
+    background-color: #0f4c81;
+    position: sticky;
+    top: 0;
+    z-index: 1111;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 70px;
+}
+
+.mainpage {
+    background: url(images/b1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.mainpage .aboutrooms {
+    background-color: white;
+}
+
+.mainpage .aboutrooms .mapsign {
+    color: #ffa372;
+}
+
+.mainpage .aboutrooms .aboutr span {
+    color: #ed6663;
+    font-size: 28px;
+}
+
+.mainpage .btnblue {
+    background-color: #0f4c81;
+    color: white;
+    height: 50px;
+}
+
+.mainpage .btnblue:hover {
+    background-color: transparent;
+    color: #0f4c81;
+    border: 1px solid #0f4c81;
+}
+
+.btnpink {
+    background-color: #ed6663 !important;
+    color: white !important;
+    height: 50px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+.btnpink:hover {
+    background-color: transparent !important;
+    color: #ed6663 !important;
+    border: 1px solid #ed6663 !important;
+}
+
+.wonderimages .backimg1 {
+    background: url(images/back1.jpg) no-repeat center;
+    background-size: cover;
+    height: 400px;
+}
+
+.wonderimages .backimg-text {
+    background-color: #ed6663;
+    color: white;
+    height: 400px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.wonderimages a {
+    transition: 0.5s ease all;
+}
+
+.wonderimages a:hover {
+    color: #0f4c81 !important;
+}
+
+.wonderimages .backimg2 {
+    background: url(images/back2.jpg) no-repeat center;
+    background-size: cover;
+    height: 400px;
+}
+
+.wonderimages .backimg2-text {
+    background-color: white;
+}
+
+.wonderimages .backimg2-text .icon span {
+    color: #71540a !important;
+}
+
+.wonderimages .backimg2-text a {
+    color: black;
+}
+
+.wonderimages .backimg2-text a:hover {
+    color: #0f4c81;
+}
+
+.wonderimages .backimg3 {
+    background: url(images/back3.jpg) no-repeat center;
+    background-size: cover;
+    height: 300px;
+}
+
+.wonderimages .backimg4 {
+    background: url(images/back4.jpg) no-repeat center;
+    background-size: cover;
+    height: 420px;
+}
+
+.wonderimages .gridMain {
+    background-color: #ffa372;
+    height: 420px;
+}
+
+.wonderimages .gridMain .gridbox {
+    padding: 20px;
+}
+
+.wonderimages .gridbox a {
+    color: white;
+}
+
+/* =============== */
+.placebox {
+    position: relative;
+    overflow: hidden;
+}
+
+.placebox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-content: center;
+    text-align: center;
+    transition: 0.5s ease all;
+}
+
+.placebox:hover .text {
+    background-color: #0f4c8189;
+}
+
+.placebox .box {
+    height: auto;
+    width: 300px;
+}
+
+.SideLine {
+    position: absolute;
+    bottom: -200px;
+    left: 34px;
+    height: 200px;
+    width: 285px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    transition: 0.5s ease all;
+    opacity: 0.3;
+}
+
+.placebox:hover .SideLine {
+    bottom: 16px;
+    opacity: 1;
+}
+
+.placebox .UpperLine {
+    position: absolute;
+    bottom: -34px;
+    left: 93px;
+    height: 306px;
+    width: 166px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    transition: 0.5s ease all;
+    opacity: 0.3;
+    transform: rotate(90deg) skewY(90deg);
+}
+
+.placebox:hover .UpperLine {
+    transform: rotate(90deg) skewY(0deg);
+    opacity: 1;
+}
+
+.placebox p {
+    transform: rotateX(90deg);
+    /* transition: 0.5s ease all; */
+}
+
+.placebox:hover p {
+    transform: rotateX(0deg);
+}
+
+.placebox h4 {
+    transform: translateY(40px);
+}
+
+.placebox:hover h4 {
+    transform: translateY(0px)
+}
+
+.review {
+    background: url(images/b2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.review .custReview {
+    background-color: white;
+    padding: 20px;
+}
+
+.review img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #212121;
+}
+
+footer a {
+    color: white;
+    transition: 0.5s ease all;
+}
+
+footer a:hover {
+    color: #b93403;
+}
+
+.imgGallry a {
+    text-align: center;
+}
+
+.imgGallry .list-group-item.active {
+    background-color: #0f4c81 !important;
+    border-color: #0f4c81 !important;
+}
+
+.imgGallry .list-group-item {
+    border-radius: 10px !important;
+    background-color: transparent !important;
+}
+
+/* ============================================================================= */
+@media (max-width:576px) {
+    .contact {
+        display: none;
+    }
+
+    .navigation ul {
+        gap: 10px;
+    }
+
+    .wonderimages .backimg-text {
+        height: 200px;
+    }
+
+    .reverseval {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width:576px) {
+    .navigation ul {
+        gap: 10px;
+    }
+
+    .wonderimages .backimg-text {
+        height: 200px;
+    }
+
+    .reverseval {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (min-width:768px) {
+    .wonderimages .backimg-text {
+        height: 400px;
+    }
+
+    .reverseval {
+        flex-direction: column-reverse;
+    }
+
+    .cust3 {
+        width: 335px;
+        margin: auto;
+    }
+}
+
+@media (min-width:992px) {
+    .navigation ul {
+        gap: 70px;
+    }
+
+    .reverseval {
+        flex-direction: row;
+    }
+
+    .cust3 {
+        width: unset;
+        margin: unset;
+    }
+}
