@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap webpage</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- bootstrap css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap icon cdn -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <section class="topheader">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-auto">
+                    <div class="contact">
+                        <h5 class="fs-5 pb-2">Get in Touch</h5>
+                        <p class="text-muted fs-6">California, 75 West Rock</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-4 d-flex justify-content-center">
+                    <div>
+                        <h5 class="fs-5 pb-2">Email us at</h5>
+                        <p><a href="" class="text-muted fs-6">mail@example.com</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-4 d-flex justify-content-center">
+                    <div>
+                        <h5 class="fs-5 pb-2">Call us today</h5>
+                        <p><a href="" class="text-muted fs-6">+91 9874563210</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 d-flex justify-content-end align-items-center">
+                    <div>
+                        <button class="btn">
+                            <span class="fa-solid fa-search"></span>
+                            Find Property
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="navigation">
+        <div class="container py-1">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand fs-2 text-white fw-bold" href="#">Dweller</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Account
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#login">Login</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Registration</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section class="mainpage">
+        <div class="mainpage-bg-img">
+            <div class="container py-5">
+                <div class="row py-5">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                        <div class="aboutrooms p-4 py-5">
+                            <div class="mb-3 mapsign"><span class="fa-solid fa-map-signs"></span> United States, CA 902
+                            </div>
+                            <p class="display-6 fw-light mb-3">California, 75 West Rock,
+                                Maple Building</p>
+                            <div class="row my-4 aboutr g-3">
+                                <div class="col-6 col-sm-3">
+                                    <div class="">
+                                        <div class="mb-1"><span class="fa-solid fa-share-square"></span></div>
+                                        <p>1600 sq.ft</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3">
+                                    <div class="">
+                                        <div class="mb-1"><span class="fa-solid fa-house-chimney"></span></div>
+                                        <p>2 Bedrooms</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3">
+                                    <div class="">
+                                        <div class="mb-1"><span class="fa-solid fa-building"></span></div>
+                                        <p>7 Rooms</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3">
+                                    <div class="">
+                                        <div class="mb-1"><span class="fa-solid fa-shower"></span></div>
+                                        <p>3 Bathrooms</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btnblue">Check Property</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="searchProperty">
+        <div class="container py-5">
+            <div class="row py-3 d-flex align-items-center g-4">
+                <div class="col-lg-6 col-12 col-sm-12 ">
+                    <div>
+                        <img src="images/search.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 col-sm-12 ">
+                    <div class="">
+                        <p class="display-6 mb-3">Search Property From Any where</p>
+                        <p class="mb-3 text-muted">Mollitia placeat modi explicabo voluptatum corporis unde Dicta,
+                            provident! Rem
+                            adipisci
+                            Mollitia placeat modi explicabo
+                            voluptatum corporis unde? Dicta, provident! Rem adipisci consectetur adipisicing elit.
+                            Deleniti possimus culpa nemo
+                            asperiores aperiam mollitia, maiores fugiat tempor Vero est.</p>
+                        <button class="btnpink btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wonderimages">
+        <div class="container-fluid p-0">
+            <div class="row p-0 m-0">
+                <div class="col-12 p-0 col-sm-12 col-md-6 col-lg-3">
+                    <div class="backimg1"></div>
+                </div>
+                <div class="col-12 p-0 col-sm-12 col-md-6 col-lg-3">
+                    <div class="backimg-text">
+                        <div class="icon p-3">
+                            <span class="fa-solid fa-house-chimney fs-3"></span>
+                        </div>
+                        <h5><a href="" class="text-white">General <br> Contracting</a></h5>
+                    </div>
+                </div>
+                <div class="col-12 p-0 col-sm-12 col-md-6 col-lg-3">
+                    <div class="backimg2"></div>
+                </div>
+                <div class="col-12 p-0 col-sm-12 col-md-6 col-lg-3">
+                    <div class="backimg-text backimg2-text">
+                        <div class="icon mb-2">
+                            <span class="fa-solid fa-users fs-3"></span>
+                        </div>
+                        <h5 class="mb-3"><a href="">Best Team</a></h5>
+                        <p class="text-muted ">Assumenda temporibus quidem ipsam. Voluptate fuga corporis iusto
+                            similique voluptates sint
+                            quibusdam.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-0 m-0 reverseval">
+                <div class="col-12 p-0 col-sm-12 col-md-12 col-lg-6">
+                    <div class="p-lg-5 p-3 p-sm-4">
+                        <p class="display-6 mb-3">Full project management</p>
+                        <p class="mb-3">Assu menda tempo ribus quidem ipsam. Voluptate fuga corporis iusto simi lique
+                            volup tates
+                            sint quib usdam assu menda
+                            temp oribus quidem ipsam. Voluptate fuga corporis iusto similique.</p>
+                        <button class="btn btnpink">Read More</button>
+                    </div>
+                </div>
+                <div class="col-12 p-0 col-sm-12 col-md-12 col-lg-6">
+                    <div class="backimg3"></div>
+                </div>
+            </div>
+            <div class="row p-0 m-0 reverseval">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 p-0">
+                    <div class="backimg4"></div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                    <div class="row gridMain">
+                        <div class="col-6">
+                            <div class="gridbox">
+                                <h5 class="mb-3"><a href="">Efficient Building</a></h5>
+                                <p class="text-white">Cumque asperiores ab quasi laboriosam omnis tempo recons ectetur
+                                    elit.optio illum
+                                    officiis itaque soluta impedit</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="gridbox">
+                                <h5 class="mb-3"><a href="">Financial Results</a></h5>
+                                <p class="text-white">Cumque asperiores ab quasi laboriosam omnis tempo recons ectetur
+                                    elit.optio illum
+                                    officiis itaque soluta impedit</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="gridbox">
+                                <h5 class="mb-3"><a href="">General Contracting</a></h5>
+                                <p class="text-white">Cumque asperiores ab quasi laboriosam omnis tempo recons ectetur
+                                    elit.optio illum
+                                    officiis itaque soluta impedit</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="gridbox">
+                                <h5 class="mb-3"><a href="">Interior Design</a></h5>
+                                <p class="text-white">Cumque asperiores ab quasi laboriosam omnis tempo recons ectetur
+                                    elit.optio illum
+                                    officiis itaque soluta impedit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- accordian -->
+    <section class="faq">
+        <div class="container py-5">
+            <div class="row py-3">
+                <div class="col-12 title">
+                    <h1 class="text-center">FAQ</h1>
+                    <p class="text-muted text-center">ask any time</p>
+                </div>
+            </div>
+            <div class="row py-3">
+                <div class="col-lg-12">
+                    <div class="accordion accordion-flush" id="questions">
+                        <!-- 1st accordian -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ques1" aria-expanded="false" aria-controls="ques1">
+                                    What is the definition of a tour?
+                                </button>
+                            </h2>
+                            <div id="ques1" class="accordion-collapse collapse" data-bs-parent="#questions">
+                                <div class="accordion-body">
+                                    a traveling around from place to place. a long journey including the visiting of a
+                                    number of places in sequence,
+                                    especially with an organized group led by a guide.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2nd accordian -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ques2" aria-expanded="false" aria-controls="ques2">
+                                    What is the meaning of tour in a sentence?
+                                </button>
+                            </h2>
+                            <div id="ques2" class="accordion-collapse collapse" data-bs-parent="#questions">
+                                <div class="accordion-body">
+                                    a journey through the different parts of a country, region, etc. We went on a tour
+                                    of Italy. They went on a driving tour
+                                    of New England. a sightseeing tour.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3rd accordian -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ques3" aria-expanded="false" aria-controls="ques3">
+                                    What is the type of tour?
+                                </button>
+                            </h2>
+                            <div id="ques3" class="accordion-collapse collapse" data-bs-parent="#questions">
+                                <div class="accordion-body">Private tours can be led by a tour guide or a driver-guide,
+                                    and can include transportation, accommodations, meals, and
+                                    sightseeing activities. Special Interest Tours: Special interest tours are designed
+                                    for travelers with a specific
+                                    interest, such as food, wine, art, or history.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4th accordian -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#ques4" aria-expanded="false" aria-controls="ques4">
+                                    Who is the father of tourism?
+                                </button>
+                            </h2>
+                            <div id="ques4" class="accordion-collapse collapse" data-bs-parent="#questions">
+                                <div class="accordion-body">Thomas Cook, the famous British businessman is known as the
+                                    Father of Tourism, because of his contributions that
+                                    resulted in the birth of modern tourism, beginning with the idea of a “packaged
+                                    tour.” In 1855, he organized his first
+                                    tours abroad, and in 1872, he embarked on his first round-the-world tour.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- list group = image gallery -->
+    <section class="imgGallry bg-dark-subtle">
+        <div class="container py-5">
+            <!-- heading -->
+            <div class="row py-3">
+                <div class="col-12">
+                    <h1 class="text-center">Image Gallery</h1>
+                </div>
+            </div>
+            <!-- main row -->
+            <div class="list-group" id="list-tab" role="tablist">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <a class="list-group-item list-group-item-action active" id="allimg" data-bs-toggle="list"
+                            href="#all_img" role="tab" aria-controls="all_img">All Images</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <a class="list-group-item list-group-item-action" id="short" data-bs-toggle="list"
+                            href="#short_tour" role="tab" aria-controls="short_tour">Short Tour</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <a class="list-group-item list-group-item-action" id="mid" data-bs-toggle="list"
+                            href="#mid_tour" role="tab" aria-controls="mid_tour">Mid Tour</a>
+                    </div>
+                    <div class="col-lg-3">
+                        <a class="list-group-item list-group-item-action" id="long" data-bs-toggle="list"
+                            href="#long_tour" role="tab" aria-controls="long_tour">Long Tour</a>
+                    </div>
+                </div>
+            </div>
+            <!-- changing row -->
+            <div class="tab-content py-3" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="all_img" role="tabpanel" aria-labelledby="allimg">
+                    <div class="row g-4">
+                        <div class="col-4">
+                            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/cf/e5/cb.jpg"
+                                alt="" class="img-fluid">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://4.imimg.com/data4/OW/JJ/ANDROID-37526662/product-500x500.jpeg" alt=""
+                                class="img-fluid">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://himachaltourpackage.co.in/wp-content/uploads/2020/07/Himachal-Toy-TrainTour-Package-scaled.jpg"
+                                alt="" class="img-fluid">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://static.toiimg.com/photo/67382132.cms" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://cr7tourntravel.com/wp-content/uploads/2020/02/797315-1.jpg" alt=""
+                                class="img-fluid">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://www.holidify.com/images/cmsuploads/compressed/shutterstock1891920235_20230530125136.jpg"
+                                alt="" class="img-fluid">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://www.hlimg.com/images/deals/360X230/vidhana-soudha-11529658290-13.jpg"
+                                alt="" class="img-fluid">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://www.specialholidays.com/admin/images/package/package_gallery/5d4eb00f468797.96242461.jpg"
+                                alt="" class="img-fluid">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/af/7c/09/warner-bros-studio-tour.jpg?w=1200&h=-1&s=1"
+                                alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="short_tour" role="tabpanel" aria-labelledby="short">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/cf/e5/cb.jpg"
+                                alt="" class="img-fluid">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://4.imimg.com/data4/OW/JJ/ANDROID-37526662/product-500x500.jpeg" alt=""
+                                class="img-fluid">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://himachaltourpackage.co.in/wp-content/uploads/2020/07/Himachal-Toy-TrainTour-Package-scaled.jpg"
+                                alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="mid_tour" role="tabpanel" aria-labelledby="mid">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="https://static.toiimg.com/photo/67382132.cms" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://cr7tourntravel.com/wp-content/uploads/2020/02/797315-1.jpg" alt=""
+                                class="img-fluid">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://www.holidify.com/images/cmsuploads/compressed/shutterstock1891920235_20230530125136.jpg"
+                                alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="long_tour" role="tabpanel" aria-labelledby="long">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="https://www.hlimg.com/images/deals/360X230/vidhana-soudha-11529658290-13.jpg"
+                                alt="" class="img-fluid">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://www.specialholidays.com/admin/images/package/package_gallery/5d4eb00f468797.96242461.jpg"
+                                alt="" class="img-fluid">
+                        </div>
+                        <div class="col-4">
+                            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/af/7c/09/warner-bros-studio-tour.jpg?w=1200&h=-1&s=1"
+                                alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- =========================================================-->
+
+    <section class="popularplace">
+        <div class="container py-5">
+            <div class="row py-3">
+                <div class="col-12 title text-center">
+                    <h3>MOST POPULAR PLACES</h3>
+                    <p class="text-secondary">Properties In Most Popular Places</p>
+                </div>
+            </div>
+            <div class="row py-3 g-4">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="placebox">
+                        <div>
+                            <img src="images/grid1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="box">
+                            <div class="text">
+                                <h4>Australia</h4>
+                                <p>Lorem ipsum dolor sit <br> amet elit.</p>
+                            </div>
+                            <div class="UpperLine"></div>
+                            <div class="SideLine"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="placebox">
+                        <div>
+                            <img src="images/grid2.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="box">
+                            <div class="text">
+                                <h4>Haiti</h4>
+                                <p>Lorem ipsum dolor sit <br> amet elit.</p>
+                            </div>
+                            <div class="UpperLine"></div>
+                            <div class="SideLine"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="placebox">
+                        <div>
+                            <img src="images/grid3.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="box">
+                            <div class="text">
+                                <h4>Guinea</h4>
+                                <p>Lorem ipsum dolor sit <br> amet elit.</p>
+                            </div>
+                            <div class="UpperLine"></div>
+                            <div class="SideLine"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="placebox">
+                        <div>
+                            <img src="images/grid4.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="box">
+                            <div class="text">
+                                <h4>Qatar</h4>
+                                <p>Lorem ipsum dolor sit <br> amet elit.</p>
+                            </div>
+                            <div class="UpperLine"></div>
+                            <div class="SideLine"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="placebox">
+                        <div>
+                            <img src="images/grid5.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="box">
+                            <div class="text">
+                                <h4>Romania</h4>
+                                <p>Lorem ipsum dolor sit <br> amet elit.</p>
+                            </div>
+                            <div class="UpperLine"></div>
+                            <div class="SideLine"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="placebox">
+                        <div>
+                            <img src="images/grid6.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="box">
+                            <div class="text">
+                                <h4>Jamaika</h4>
+                                <p>Lorem ipsum dolor sit <br> amet elit.</p>
+                            </div>
+                            <div class="UpperLine"></div>
+                            <div class="SideLine"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="review">
+        <div class="container py-5">
+            <div class="row py-3 g-3">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="custReview">
+                        <div class="cust-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sed earum, assumenda
+                            sapiente deleniti amet repudiandae? Odio laboriosam ipsa vitae mollitia amet quis magnam
+                            optio totam iure. Fuga, maxime vitae?
+                        </div>
+                        <div class="cust-bio d-flex gap-4 py-3">
+                            <div class="cus-img">
+                                <img src="images/c1.jpg" alt="">
+                            </div>
+                            <div class="cust-pos">
+                                <p>Jack Willson</p>
+                                <p>Rented Apartment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="custReview">
+                        <div class="cust-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sed earum, assumenda
+                            sapiente deleniti amet repudiandae? Odio laboriosam ipsa vitae mollitia amet quis magnam
+                            optio totam iure. Fuga, maxime vitae?
+                        </div>
+                        <div class="cust-bio  d-flex gap-4 py-3">
+                            <div class="cus-img">
+                                <img src="images/c2.jpg" alt="">
+                            </div>
+                            <div class="cust-pos">
+                                <p>Jack Willson</p>
+                                <p>Rented Apartment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                    <div class="custReview cust3">
+                        <div class="cust-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sed earum, assumenda
+                            sapiente deleniti amet repudiandae? Odio laboriosam ipsa vitae mollitia amet quis magnam
+                            optio totam iure. Fuga, maxime vitae?
+                        </div>
+                        <div class="cust-bio  d-flex gap-4 py-3">
+                            <div class="cus-img">
+                                <img src="images/c3.jpg" alt="">
+                            </div>
+                            <div class="cust-pos">
+                                <p>Jack Willson</p>
+                                <p>Rented Apartment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container py-5">
+            <div class="row py-5 g-4">
+                <div class="col-lg-5 col-12 col-sm-12 col-md-12">
+                    <div>
+                        <h2 class="text-white pb-3">Dweller</h2>
+                        <p class="text-white">Adipisicing elit. Lauda ntium, archi tecto iure Lorem incidunt iosam qui
+                            quo moll itia veniam
+                            recus andae archi tecto
+                            earum suscipit exce pturi dicta nemo quam.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-12 col-sm-12 col-md-6">
+                    <div>
+                        <h5 class="text-white pb-3">HELPFUL LINKS</h5>
+                        <ul class="p-0">
+                            <li><a href=""><span class="fa-solid fa-angle-right"></span> Home</a></li>
+                            <li><a href=""><span class="fa-solid fa-angle-right"></span> About</a></li>
+                            <li><a href=""><span class="fa-solid fa-angle-right"></span> Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 col-sm-12 col-md-6">
+                    <div>
+                        <h5 class="text-white pb-3">CONTACT US</h5>
+                        <div class="text-white pb-1">Email : <a href="">mail@company.com</a></div>
+                        <div class="text-white pb-1">Phone : <a href="">+(12)-00 222 00008</a></div>
+                        <div class="text-white pb-1">California, 75 West Rock, Maple Building.</div>
+                    </div>
+
+                    <div class="icons d-flex gap-3 py-4">
+                        <div class="icon">
+                            <a href="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="facebook"
+                                data-bs-custom-class="custom-tooltip"><span class="fa-brands fa-facebook-f"></span></a>
+                        </div>
+                        <div class="icon">
+                            <a href="" data-bs-placement="bottom" data-bs-title="Twitter" data-bs-toggle="tooltip"><span
+                                    class="fa-brands fa-twitter"></span></a>
+                        </div>
+                        <div class="icon">
+                            <a href="" data-bs-placement="bottom" data-bs-title="
+                            Instagram" data-bs-toggle="tooltip"><span class="fa-brands fa-instagram"></span></a>
+                        </div>
+                        <div class="icon">
+                            <a href="" data-bs-placement="bottom" data-bs-title="Whatsapp"
+                                data-bs-toggle="tooltip"><span class="fa-brands fa-whatsapp"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- login modal code -->
+    <div class="modal fade loginbg" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="loginLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="loginLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row py-1">
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Email address">
+                                <label for="floatingInput">Email address</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-1">
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword"
+                                    placeholder="Password">
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-success">
+                        Login
+                    </button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="footercopy bg-black">
+        <div class="container py-3">
+            <p class="text-center text-white">&copy; 2020 Dweller All rights reserved | Design by W3layouts</p>
+        </div>
+    </section>
+
+
+    <!-- popper js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <!-- bootstrap js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- tooltip code -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
