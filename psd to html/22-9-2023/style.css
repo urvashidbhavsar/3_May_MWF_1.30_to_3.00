@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 0 !important;
+}
+
+.headerpage,
+.homepage {
+    background-color: #ebe3cd;
+}
+
+.navigation {
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+    background-color: #12202f;
+    display: flex !important;
+    align-items: center !important;
+    border-radius: 40px;
+    z-index: 1111;
+}
+
+.navbar .sign {
+    color: #6bb99c;
+}
+
+.backimg {
+    background: url(images/Design.png) no-repeat center;
+    background-size: cover;
+    height: 696px;
+}
+
+.title {
+    font-family: "Playfair Display";
+    color: #12202f;
+}
+
+p {
+    color: #12202f;
+}
+
+button {
+    height: 40px;
+    padding: 0px 15px;
+    border: 2px solid transparent;
+    border-radius: 10px !important;
+}
+
+.homepage .btn1 {
+    background-color: #df581e;
+    color: white;
+}
+
+.homepage .btn2 {
+    background-color: transparent;
+    color: black;
+}
+
+/* input[type="date"],
+[type="time"] {
+    height: 40px;
+    width: 130px;
+    border-radius: 20px;
+} */
+.homepage .btn3 {
+    background-color: #6bb99c;
+    color: white;
+}
